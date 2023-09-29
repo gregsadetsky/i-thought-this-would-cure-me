@@ -1,0 +1,72 @@
+# Blender 3.6.1 MTL File: 'corridor_elevator_textured.blend'
+# www.blender.org
+
+newmtl Material
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ks corridor_textures/tex_main_gloss.png
+
+newmtl doors
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.655016 0.655016 0.655016
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Ks corridor_textures/doors_handles_gloss.png
+
+newmtl elevator
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.744931 0.744931 0.744931
+Ks 0.788298 0.788298 0.788298
+Ni 1.450000
+d 1.000000
+illum 3
+map_Ke corridor_textures/elevator_emit.png
+
+newmtl emiss
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl floor
+Ns 1000.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd corridor_textures/marble_floor2.png
+
+newmtl handles
+Ns 33.057854
+Ka 1.000000 1.000000 1.000000
+Kd 0.535136 0.535136 0.535136
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl lamps
+Ns 41.838863
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd corridor_textures/lamps_emit.png
+map_Ks corridor_textures/lamps_gloss.png
