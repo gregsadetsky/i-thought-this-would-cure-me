@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { MTLLoader } from "three/addons/loaders/MTLLoader.js";
 import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 // import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { Howl, Howler } from "howler";
 
 // document on load
 window.addEventListener("load", () => {
@@ -14,6 +15,10 @@ window.addEventListener("load", () => {
 function main() {
   let camera, scene, renderer, clock;
   let nextZPosition = 0;
+
+  var sound = new Howl({
+    src: ["/audio/sorry.mp3"],
+  });
 
   init();
   animate();
@@ -51,8 +56,8 @@ function main() {
 
     const onProgress = function (xhr) {
       if (xhr.lengthComputable) {
-        const percentComplete = (xhr.loaded / xhr.total) * 100;
-        console.log(Math.round(percentComplete, 2) + "% downloaded");
+        // const percentComplete = (xhr.loaded / xhr.total) * 100;
+        // console.log(Math.round(percentComplete, 2) + "% downloaded");
       }
     };
 
@@ -111,6 +116,12 @@ function main() {
     // slowly tween to nextZPosition
     camera.position.z += (nextZPosition - camera.position.z) * 0.05;
   }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.code === "KeyS") {
+      sound.play();
+    }
+  });
 
   document.addEventListener("keyup", (e) => {
     if (e.code === "KeyS") {
